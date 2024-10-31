@@ -11,27 +11,37 @@ class Numbers {
   }
   count() {
     //return the count of numbers in data
+   //return this.data;
+    //object: what we learned last week
+    return this.data.map((num) => num + 0);
   }
   printNumbers() {
     //print the numbers in data
+    console.log(this.data)
   }
   odds() {
     //return the odd numbers in data
+    return this.data.filter((num) => num % 2 == 1);
   }
   evens() {
     //return the even numbers in data
+    return this.data.filter((num)=> num % 2 == 0);
   }
   sum() {
     //return the sum of the numbers
+    return this.data.reduce((num, sum) => num + sum);
   }
   product() {
     //return the product of the numbers
+    return this.data.reduce((acc, current) => acc + current);
   }
   greaterThan(target) {
     //return the numbers greater than the target
+    return this.data.filter(number => number > target);
   }
   howMany(target) {
     //return the count of a given number
+    return target
   }
 }
 
